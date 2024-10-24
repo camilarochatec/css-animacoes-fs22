@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: 1px solid red;
+    outline-offset: -1px;
+}
+
+body {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    display: flex;
+    gap: 6px;
+
+    & .barrinha {
+        width: 12px;
+        height: 50px;
+        background-color: black;
+        animation: fadeOut linear infinite 1s;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
