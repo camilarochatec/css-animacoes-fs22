@@ -25,7 +25,8 @@ body {
         height: 50px;
         background-color: black;
         animation: fadeOut linear infinite 1s;
-    }
+        animation-delay: var(--tempo);
+}
 }
 
 @keyframes fadeOut {
